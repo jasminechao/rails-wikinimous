@@ -1,0 +1,18 @@
+<div class="articles-container">
+  <h1><%= @article.title %>
+    <%= link_to edit_article_path(@article) do %>
+      <i class='fa fa-pencil'></i>
+       <% end  %>
+    <%= link_to article_path(@article) do %>
+      <i class='fa fa-trash-o'></i>
+    <% end  %>
+  </h1>
+  </h1>
+  <hr>
+  <img src="https://unsplash.it/800/300/?random" alt="">
+  <p><%= @article.content %></p>
+
+<%= link_to "Back to all articles", articles_path, class: "btn btn-primary" %>
+
+
+</div>

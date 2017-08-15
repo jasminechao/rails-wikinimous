@@ -1,0 +1,22 @@
+
+
+<div class="articles-container">
+  <h1>Edit  <%= @article.title %></h1>
+  <div class="form-group">
+    <label for="exampleTextarea">Content</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+
+
+
+  <%= form_for(@article) do |a| %>
+  <%= a.label :title %>
+  <%= a.text_field :title %>
+
+  <%= a.label :content %>
+  <%= a.text_field :content %>
+
+  <%= a.submit class: "btn btn-default" %>
+  <% end %>
+</div>
+
